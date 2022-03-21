@@ -15,17 +15,44 @@ body{
 }
 
 .container{
-    padding:0 35px;
+   /* padding:0 100px;*/
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     margin-top: 30px;
     display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
+}
+
+.main_section{
+    margin-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+
+.secundary-section{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer{
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
+ }
+
+.footer_div{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
 }
 
 .logo{
@@ -48,12 +75,13 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    padding: 0px 20px;
+
+    padding-left: 50px;
 }
 
 nav ul li a{
     color:#6262a0;
-    font-size: 1.05em;
+    font-size: 1em;
     text-decoration: none;
 }
 
@@ -64,6 +92,13 @@ nav ul li a:hover{
 h1{
     color:#6262a0;
     font-size: 3em;
+    font-weight:400;    
+    margin:25px 0px 10px;
+}
+
+h2{
+    color:#6262a0;
+    font-size: 1.8em;
     font-weight:400;    
     margin:25px 0px 10px;
 }
@@ -83,7 +118,7 @@ h4{
     margin:0;
     font-size: 1.3em;
     font-weight:400;    
-    padding:20px 0px;
+    padding:10px 0px;
     display: block;
     text-align: center;
 }
@@ -91,14 +126,21 @@ h4{
 p{
     color:#a0a0ba;
     font-size: 1.05em;
+    line-height: 30px;
 }
 
 p span{
     font-size: 0.8em;
+    line-height: 0px;
+    margin: 0;
 }
+
+
 
 p.center{
     text-align: center;
+    margin: 10px;
+
 }
 
 
@@ -111,10 +153,10 @@ p.center{
 
 
 #box-trial{
-    flex:40;
+    margin-left: 100px;
     background-color: white;
     border-radius: 4px;
-    padding:10px 40px;
+    padding:40px 40px 10px;
     box-shadow: 0px 21px 66px -16px rgba(162,160,160,0.75);
     -webkit-box-shadow: 0px 21px 66px -16px rgba(162,160,160,0.75);
     -moz-box-shadow: 0px 21px 66px -16px rgba(162,160,160,0.75);
@@ -122,16 +164,16 @@ p.center{
 
 
 .form-container{
-   padding: 40px;
+   padding: 25px;
 }
 
 .field-form input{
     background-color: #F7F6FF;
     color: #555;
-    border: 1px solid #ced4da;
+    border: 1px solid #e9ebee;
     border-radius: 4px;
     font-size: 1.05em;
-    padding: 6px 6px 6px 15px;
+    padding: 15px 15px 6px 15px;
     outline: none;
     margin-right:10px;
     width: 100%;
@@ -141,7 +183,7 @@ p.center{
 .field-form label{
     color: #4510d6;
     margin: 10px 0px;
-    font-size: 1.05em;
+    font-size: 0.95em;
     display: block;
     font-weight:100;
 }
@@ -152,9 +194,9 @@ p.center{
     border-radius: 6px;
     color: #fff;
     text-transform: uppercase;
-    padding: 15px 10px;
+    padding: 18px 10px;
     border:none;
-    margin:10px 0px;
+    margin:20px 0px 0px;
     font-size: 0.8em;
     font-weight: 700;
 }
@@ -166,15 +208,13 @@ p.center{
 
 }
 
-article{
-    margin-top:80px;
-    display:flex;
-
-}
 
 .content-slide1{
-    flex:60;
-    padding: 0 40px;
+    flex:50;
+}
+
+.content-slide1-text{
+    margin-top: 75px;
 }
 
 .secundary-section{
@@ -183,33 +223,50 @@ article{
     flex-direction: column;
     text-align: center;
 }
-/*
+
 .section1{
 
-
-}*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+    padding: 0px 15px;
+}
 
 .section2{
     display: flex;    
     margin-right: auto;
     margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .items-box{
+    flex:33;
     display: flex;
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 20px;
+    padding: 0 15px;
  
+}
+
+
+.items-box p{
+    color:#a0a0ba;
+    font-size: 1em;
+    line-height: 30px;
+
 }
 
 .rounded-image {
 
-    width: 80px;
-    height: 80px;
-    line-height: 80px; 
+    width: 70px;
+    height: 70px;
+    line-height: 70px; 
     border-radius: 50%;
     margin-bottom: 40px;
     text-align: center;
